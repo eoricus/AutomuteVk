@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "AUTOMUTE_VK", 
+    "version": "1.0",
+    "description": "Automatically mute messages from the user",
+
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+
+    "browser_action": {
+        "default_title" : "Автомут ВК",
+    },
+
+    "content_scripts": [
+        {
+            "matches" : ["https://vk.com/*"],
+            "js" : ["main.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
