@@ -1,4 +1,4 @@
-const blackList = ["531970408", "109701271"] // TODO добавить Тему
+const blackList = ["531970408", "109701271", "363796582"] // TODO добавить Тему
 const mute = (event) => {
     all_divs = div = document.getElementsByClassName("im-mess-stack _im_mess_stack ")
 
